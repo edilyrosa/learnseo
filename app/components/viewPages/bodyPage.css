@@ -1,0 +1,168 @@
+body{
+    color: #000;
+}
+
+.article-container {
+display: flex;
+width: 100%;
+
+}
+
+.section1Celebridad, .section2Celebridad {
+flex: 1; /* Permite que las secciones ocupen el mismo espacio */
+padding: 10px; /* Ajusta el padding según tus necesidades */
+margin: 5px; /* Ajusta el margen según tus necesidades */
+/*border: 2px solid  rgb(224, 0, 0);;  Añade un borde para separar visualmente las secciones */
+width: 100%;
+
+}
+
+
+.article-container {
+display: flex;
+flex-wrap: wrap; /* Permite que las secciones se coloquen una debajo de la otra cuando no haya suficiente espacio */
+/* border: 2px solid  rgb(224, 0, 0); */
+}
+
+.section2Celebridad {
+flex: 1; /* Permite que las secciones ocupen el mismo espacio */
+padding: 10px; /* Ajusta el padding según tus necesidades */
+margin: 5px; /* Ajusta el margen según tus necesidades */
+/* border: 2px solid  rgb(224, 0, 0); */
+}
+
+
+.section1Celebridad > img{
+flex: 1; /* Permite que las secciones ocupen el mismo espacio */
+margin: 5% auto;
+width: 100%;
+max-height: 120vh;
+height: auto;
+}
+
+
+
+
+
+section.section1Celebridad > img, 
+img.foto-section2:hover {
+transition: transform 0.5s;
+}
+
+section.section1Celebridad:hover {
+overflow: hidden;
+}
+
+section.section2Celebridad:hover {
+overflow: hidden;
+}
+
+section.section1Celebridad > img:hover,
+img.foto-section2:hover {
+transform: scale(1.2);
+padding: 5% 2%;
+margin: 3% auto
+}
+
+
+img.foto-section2:hover {
+width: 100%;
+}
+
+
+.big-container *{
+color: black;
+margin-right: 5px;
+margin-left: 0px;
+}
+.rojo{
+color:red;
+}
+
+.centrar{
+text-align: center;
+}
+
+.foto-section2{
+width: 100%;
+max-height: 120vh;
+height: auto;
+margin: 5px auto;
+}
+
+
+.section2Celebridad {
+    flex: 100%; /* Ocupar todo el ancho del padre */
+    border: none;/* Añade un borde para separar visualmente las secciones */
+    margin: 5px auto;
+
+}
+.section1Celebridad > img{
+    flex: 100%; /* Permite que las secciones ocupen el mismo espacio */
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+
+section.section1Celebridad > img, 
+img.foto-section2:hover {
+    transition: transform 0.5s;
+  }
+  
+  section.section1Celebridad:hover {
+    overflow: hidden;
+  }
+  
+  section.section1Celebridad > img:hover,
+  img.foto-section2:hover {
+    transform: scale(1.2);
+    padding: 5% 2%;
+    margin: 3% auto
+  }
+
+
+
+
+.big-container *{
+    color: black;
+}
+.rojo{
+    color:red;
+}
+
+.centrar{
+    text-align: center;
+}
+
+
+
+.foto-section2{
+    width: 100%;
+    max-height: 120vh;
+    height: auto;
+    margin: 5px auto;
+    }
+
+   
+    .section2Celebridad {
+        flex: 100%; /* Ocupar todo el ancho del padre */
+        border: none;/* Añade un borde para separar visualmente las secciones */
+        margin: 5px auto;
+  
+    }
+    .section1Celebridad > img{
+        flex: 100%; /* Permite que las secciones ocupen el mismo espacio */
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    
+
+    .section2Celebridad > img {
+        flex: 100%; /* Permite que las secciones ocupen el mismo espacio */
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+

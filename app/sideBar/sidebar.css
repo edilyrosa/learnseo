@@ -1,0 +1,246 @@
+
+div.navbar{
+    overflow-y: hidden;
+}
+
+/* Estilos del navbar */
+.navbar {
+    width: 4.5vw;
+    height: 90%;
+    background-color:rgba(11, 8, 0, 0.626);
+    position: fixed; /* Cambiar de 'sticky' a 'fixed' para superponer */
+    top: 10vh;
+    left: 3px; /* Fijar el navbar en la parte izquierda de la ventana */
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+    z-index: 1; /* Asegurar que esté por encima de otros elementos */
+    overflow-y: hidden;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    height: 7vh;
+    padding: 2px 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    overflow-y: hidden;
+}  
+
+.menu li:hover {
+    background-color: rgba(11, 8, 0, 0.258);
+    overflow-y: hidden;
+    height: 10vh;
+    margin-left: 1px;
+    height: 10%;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu i {
+    font-size: 16px;
+    padding: 2px;
+    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.menu:hover i{
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+
+.menu span {
+    display: none;
+    margin-right: 1px;
+}
+.menu li span{
+    display: none;
+    margin-right: 1px;
+}
+
+.menu li:hover span{
+    display: inline;
+    margin: 1px auto;
+    width: 98%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.menu li:hover * {
+    font-size: 20px;
+    padding: 1px;
+    margin: 5px auto;
+}
+
+.navbar:hover {
+    width: 30vw;
+}
+
+.menuMenu{
+    color:white;
+    font-weight:bold;
+    text-align: center;
+}
+
+.navbar:hover .menuMenu{
+    display: none;
+}
+
+.navbar:hover .logo img {
+    margin: 0 30%;
+}
+
+i.fas.fa-chart-bar{
+    width: 100%;
+}
+
+div.iconCloseSidebar{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  
+  div.closeMenu{
+   display: none;
+  
+  }
+
+/* !!WHEN ADD MORE LI FIX THIS*/
+
+li#li-1 {
+    margin: 5vh auto;
+}
+li#li-1 * {
+    margin: 0 auto;
+    font-size: 26px;
+}
+
+li#li-1:hover * {
+    margin: 2px auto;
+    font-size: 20px;
+  }
+
+  li span{
+    margin: 0 auto;
+  }  
+
+
+  /* Responsividad para pantallas menores a 768px */
+@media only screen and (max-width: 1430px) {
+    
+.menu li:hover span{
+    display: inline;
+    width: 98%;
+    font-size: 12px;
+    margin: 5px auto;
+}
+.menu li:hover * {
+    font-size: 12px;
+    padding: 1px;
+    margin: 5px auto;
+}
+.menu li * {
+    font-size: 12px;
+    margin: 5px auto;
+}  
+
+
+    /* !!WHEN ADD MORE LI FIX THIS */
+    li#li-1 {
+        font-size: 16px;
+    }
+
+    li#li-1 * {
+        margin: 0 auto;
+        font-size: 16px;
+    }
+    li#li-1:hover * {
+        font-size: 16px;
+    }
+
+
+}
+
+
+/* Estilos específicos para dispositivos móviles con ancho máximo de 767px */
+@media (max-width: 767px) {
+ 
+    div.navbar{
+        width: 50vw;
+        margin: 2px auto;
+    }
+  
+
+    .menu li span{
+        display: inline;
+        font-size: 20px;
+        margin: 1px auto;
+        width: 98%;
+        text-align: center;
+    }
+    .menu li * {
+        padding: 1px;
+        margin: 5px auto;
+    }
+
+
+    div.iconCloseSidebar{
+            font-size: 20px;
+        }
+
+        /* el span link activo */
+     .link-active *{
+        font-size: 20px;
+    } 
+ 
+    .menu i {
+        font-size: 12px;
+    }
+
+
+    span{
+      font-size: 12px;
+    }
+
+    span:focus{
+      font-size: 12px;
+    }
+
+    .navbar {
+        width: 8%;
+    }
+
+    .navbar:hover {
+        width: 50vw;
+    }
+
+
+    li#li-1 {
+        margin: 5vh auto;
+    }
+    
+    /* cada span #li-1 */
+    li#li-1 * {
+        font-size: 12px;
+        margin: 0 auto;
+    } 
+
+  }

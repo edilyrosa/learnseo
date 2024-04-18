@@ -51,96 +51,63 @@ return (
             }}
           />
 
-    <title>Último Chisme</title>
-    <meta name="lang" content="es"/>
-    <meta httpEquiv="Content-Language" content="es" />
-    <meta name="DC.Language" content="Spanish"/>
-    <meta name="author" content="ultimochisme.com" />
-    <meta name="description" content="Este es un sitio web destinado al entretenimiento e información de
-       farándula, tendencias de moda, belleza y estilo de vida, celebridades, comida, viajes y lugares de interés.
-       Noticias diarias sobre música, series, películas, conciertos, musicales, estrellas de cine, artistas, 
-       deportistas, tendencias de moda, consejos de belleza, recetas de cocina, estilo de vida y 
-       la novedad de las principales" />
-      <meta name="keywords" content="último chisme, chisme, noticias, entretenimiento, secretos de belleza, 
-      frutas, vegetales, piel, cabello, dientes, dietas, adelgazar, masajes, mascarillas, cremas, farándula, 
-      últimas noticias de la farándula, noticias de farandula, noticias de farandula hoy, farándula hoy, 
-      chismes de, Kate Middleton, Princesa de Gales, Shakira, Kardashian, Ariana Grande, taylor swift, 
-      Selena Gomez, Sebastián Yatra, Tini Stoessel, Camilo, Evaluna, Karol G, Anitta, Aitana, María Becerra, 
-      Emilia Mernes, Duki, Milo J, Moda, cine, famosos, información internacional, cine, música, gastronomía, 
-      cocina, pasarelas, belleza, niños, hombres, imágenes de todos los desfiles, exclusivas, noticias, 
-      el tiempo, programación televisión, horóscopo, sociedad, novias, realeza, famosos" />
-      {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
-      <meta name="DC.title" lang="es" content="ultimochisme.com • Portal informativo de actualidad, belleza, 
-      lifestyle, moda, música y deportes"/>
-      <meta name="DC.description" lang="es" content="Número 1 en actualidad y tendencias. Portal femenino líder 
-      en internet. Noticias diarias sobre las estrellas de cine, la música, tendencias de moda, 
-      consejos de belleza, recetas de cocina, estilo de vida y la actualidad de las principales artistas y deportistas"/>
-      <meta name="DC.subject" lang="es" content="último chisme, chisme, noticias, entretenimiento, secretos de belleza, 
-      frutas, vegetales, piel, cabello, dientes, dietas, adelgazar, masajes, mascarillas, cremas, farándula, 
-      últimas noticias de la farándula, noticias de farandula, noticias de farandula hoy, farándula hoy, 
-      chismes de, Kate Middleton, Princesa de Gales, Shakira, Kardashian, Ariana Grande, taylor swift, 
-      Selena Gomez, Sebastián Yatra, Tini Stoessel, Camilo, Evaluna, Karol G, Anitta, Aitana, María Becerra, 
-      Emilia Mernes, Duki, Milo J, Moda, cine, famosos, información internacional, cine, música, gastronomía, 
-      cocina, pasarelas, belleza, niños, hombres, imágenes de todos los desfiles, exclusivas, noticias, 
-      el tiempo, programación televisión, horóscopo, sociedad, novias, realeza, famosos" />
-      <meta name="DC.creator" content="ultimochisme.com"/>
-      <meta name="DC.publisher" content="ultimochisme.com"/>
-      <meta name="origen" content="ultimochisme.com"/>
-      <meta name="organization" content="ultimochisme.com"/>
-      <meta name="subject" content="noticias"/> 
-      <meta name="Classification" content="World, Español, Regional, Europa, España, América, Argentina, Bolivia, 
-      Chile, Colombia, Costa Rica, Cuba, República Dominicana, Ecuador, El Salvador, Guatemala, Honduras, 
-      México, Nicaragua, Panamá, Paraguay, Perú, Puerto Rico, República del Congo, Uruguay, Venezuela, 
-      Andorra, España, Guinea Ecuatorial, GibraltarNoticias y medios, Revistas" />
-      <meta http-equiv="Content-Language" content="es"/>
-      <meta name="Locality" content="Caracas, Venezuela"/>
-      <meta name="geo.placename" content="Caracas, Venezuela"/>
-      <meta name="VW96.objecttype" content="Homepage"/>
-      <meta name="distribution" content="global"/>
-      <meta name="resource-type" content="document"/>
-      <meta name="google-site-verification" content="ZQkeK5O0FkeEPn67f_ayWtWwXeUKAAOG5XgfpHPplZM" />
-      <meta name="robots" content="all" />
+    <title>Learn SEO</title>
+    <meta name="lang" content="en"/>
+    <meta httpEquiv="Content-Language" content="en" />
+    <meta name="DC.Language" content="English"/>
+    <meta name="author" content="https://learnseo.vercel.app/" />
 
-      <meta property="og:title" content="Lo último en Chismes, Realeza, Artistas, viajes, Moda, Celebridades y Farándula" />
-      <meta property="og:image" content= "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da"/>
-      <meta property="og:description" content="Este es un sitio web destinado al entretenimiento e información de
-       farándula, tendencias de moda, belleza y estilo de vida, celebridades, comida, viajes y lugares de interés.
-       Noticias diarias sobre música, series, películas, conciertos, musicales, estrellas de cine, artistas, 
-       deportistas, tendencias de moda, consejos de belleza, recetas de cocina, estilo de vida y 
-       la novedad de las principales"/>
-      <meta property="og:url" content="https://www.ultimochisme.com"/>
-      <meta property="og:type" content="website"/>
-      <meta property="og:site_name" content="Último Chisme"/>
-      <meta property="og:locale" content="es_LA"/>
+    <meta name="description" content="Sitio educativo para aprender sobre JavaScript y SEO. Encuentra información y recursos sobre programación web y optimización para motores de búsqueda." />
+    <meta name="keywords" content="JavaScript, SEO, programación web, desarrollo frontend, optimización SEO, tutoriales JavaScript, tutoriales SEO, aprender JavaScript, aprender SEO" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+    <meta name="DC.title" lang="es" content="learnseo.vercel.app • Aprende sobre JavaScript y SEO en un solo lugar" />
+    <meta name="DC.description" lang="es" content="Portal educativo sobre JavaScript y SEO. Encuentra recursos, tutoriales y consejos para mejorar tus habilidades en programación y optimización web." />
+    <meta name="DC.subject" lang="es" content="JavaScript, SEO, programación web, desarrollo frontend, optimización SEO, tutoriales, recursos educativos" />
+    <meta name="DC.creator" content="learnseo.vercel.app"/>
+    <meta name="DC.publisher" content="learnseo.vercel.app"/>
+    <meta name="origen" content="learnseo.vercel.app"/>
+    <meta name="organization" content="learnseo.vercel.app"/>
+    <meta name="subject" content="educación, tecnología"/> 
+    <meta name="Classification" content="World, Español, Educación, Tecnología, Programación, SEO" />
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta name="Locality" content="California, USA"/>
+    <meta name="geo.placename" content="California, USA"/>
+    <meta name="VW96.objecttype" content="Homepage"/>
+    <meta name="distribution" content="global"/>
+    <meta name="resource-type" content="document"/>
+    <meta name="google-site-verification" content="ZQkeK5O0FkeEPn67f_ayWtWwXeUKAAOG5XgfpHPplZM" />
+    <meta name="robots" content="all" />
 
-      <meta name="HandheldFriendly" content="True"/>
-      <meta name="MobileOptimized" content="True"/>
-      <link rel="canonical" href="https://www.ultimochisme.com/" />
-      
-      <meta name="twitter:creator" content="@ultimochisme" />
-      <meta name="twitter:title" content="Último Chisme" />
-      <meta name="twitter:description" content="Este es un sitio web destinado al entretenimiento e información de
-       farándula, tendencias de moda, belleza y estilo de vida, celebridades, comida, viajes y lugares de interes.
-       Noticias diarias sobre música, series, películas, conciertos, musicales, estrellas de cine, artistas, 
-       deportistas, tendencias de moda, consejos de belleza, recetas de cocina, estilo de vida y 
-       la novedad de las principales" />
-      <meta name="twitter:card" content="app"/>
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:card" content="summary"/> 
-      <meta name="twitter:site" content="@ultimochisme"/>
-      <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da" /> 
+    <meta property="og:title" content="Aprende sobre JavaScript y SEO en un solo lugar" />
+    <meta property="og:image" content= "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da"/>
+    <meta property="og:description" content="Portal educativo sobre JavaScript y SEO. Encuentra recursos, tutoriales y consejos para mejorar tus habilidades en programación y optimización web." />
+    <meta property="og:url" content="https://learnseo.vercel.app"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="LearnSEO"/>
+    <meta property="og:locale" content="es_LA"/>
 
-      <meta name="theme-color" content="#fff"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="True"/>
+    <link rel="canonical" href="https://learnseo.vercel.app/" />
 
-      <meta data-itemprop="name" content="Último Chisme"/>
-      <meta data-itemprop="logo" content="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da"/> 
-             
-      <link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16"/>
-      <link rel="apple-touch-icon" href="/favicon.ico" sizes="32x32 16x16"/>
-      <meta name="msapplication-TileImage" content="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da"/> 
-      <link rel="mask-icon" href="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da" color="#fff"/>
+    <meta name="twitter:creator" content="@learnseo" />
+    <meta name="twitter:title" content="LearnSEO" />
+    <meta name="twitter:description" content="Portal educativo sobre JavaScript y SEO. Encuentra recursos, tutoriales y consejos para mejorar tus habilidades en programación y optimización web." />
+    <meta name="twitter:card" content="app"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary"/> 
+    <meta name="twitter:site" content="@learnseo"/>
+    <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da" /> 
 
+    <meta name="theme-color" content="#fff"/>
+
+    <meta data-itemprop="name" content="LearnSEO"/>
+    <meta data-itemprop="logo" content="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da"/> 
+
+    <link rel="icon" type="image/png" href="/favicon.ico" sizes="16x16"/>
+    <link rel="apple-touch-icon" href="/favicon.ico" sizes="32x32 16x16"/>
+    <meta name="msapplication-TileImage" content="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da"/> 
+    <link rel="mask-icon" href="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da" color="#fff"/>
 
     </head>
 

@@ -166,3 +166,7 @@ img.foto-section2:hover {
         width: 100%;
     }
 
+a.ancor > i{
+    color: blue;
+    text-decoration: underline;
+}

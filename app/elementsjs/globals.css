@@ -42,10 +42,10 @@ body {
   font-family: 'montserrat', 'Arial Narrow', Arial, sans-serif;
   color: rgb(var(--foreground-rgb));
   /* background: rgba(245, 213, 218, 0.701); */
-  background-image: url('./assets/background.gif');
-  background-image: url('./assets/back.gif');
+  background-image: url('../assets/background.gif');
+  background-image: url('../assets/back.gif');
   background-repeat: repeat;
-  background: rgb(250, 249, 249)
+  background: rgb(245, 243, 243)
   
 }
 
@@ -160,10 +160,6 @@ hr.hr-normal{
   width: 100%;  
 }
 
-body .body-index{
-  margin-top: 0vh;
-  background: #000;
-}
 
 .two-siblings{
   display: grid;

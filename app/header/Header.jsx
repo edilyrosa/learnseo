@@ -38,6 +38,14 @@ function Header() {
                     
 
 
+                     <Link {...{href: '/', className: path === '/' ? 'link-active-h' : ''}} >  
+                    
+                        <i > 
+                         <span>Home</span> 
+                        </i>
+                    </Link>
+
+
                      <Link {...{href: '/windowjs', className: path === '/windowjs' ? 'link-active-h' : ''}} >  
                     
                         <i > 

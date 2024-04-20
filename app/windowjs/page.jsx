@@ -1,7 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
-import BodyPage from '.././components/viewPages/BodyPage.jsx'
+import BodyPage from '../components/viewPages/BodyPage.jsx'
 
-export default async function General() {
+export default async function Window() {
   let news = [
     {
       title: '',
@@ -13,9 +13,9 @@ export default async function General() {
   const supabase = createClient();
 
   try {
-    const { data: news1 } = await supabase.from("articleJS").select();
+    const { data: news1 } = await supabase.from("articleJS_ObjWindow").select();
     if (news1) {
-      news = news1[0];
+      news = news1;
     }
   } catch (error) {
     console.error("Error fetching data from Supabase:", error);

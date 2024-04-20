@@ -32,26 +32,26 @@ function Header() {
                 <section className= {`${montserrat.className} antialiased banner-logo-head`}style={{color:'white'}}>
                 
                     <i className="icon-hamburger"><FontAwesomeIcon icon={faBars} onClick={handleSidebarMenu}/></i> 
-                    <label className= {`${montserrat.className} antialiased parrafo`} >Lo Ultimo en... </label> 
+                    <label className= {`${montserrat.className} antialiased parrafo`} >Learn JavaScript... </label> 
                         
                         {menuOpen && <Sidebar />} 
                     
 
 
-                     <Link {...{href: '/', className: path === '/' ? 'link-active-h' : ''}} >  
+                     <Link {...{href: '/windowjs', className: path === '/windowjs' ? 'link-active-h' : ''}} >  
                     
                         <i > 
-                         <span >La Portada</span> 
+                         <span>Window Object</span> 
                         </i>
                     </Link>
 
                  
-                    <Link {...{href: '/celebridades', className: path === "/celebridades" ? 'link-active-h': ''}}>
-                        <i >  <span>Celebridades</span></i>
+                    <Link {...{href: '/elementsjs', className: path === "/elementsjs" ? 'link-active-h': ''}}>
+                        <i >  <span>HTML Elements</span></i>
                     </Link> 
 
-                    <Link {...{href:'/moda', className:path === "/moda" ? 'link-active-h': ''}}>
-                        <i>  <span>Moda y Tendencias</span></i>
+                    <Link {...{href:'/eventsjs', className:path === "/events" ? 'link-active-h': ''}}>
+                        <i>  <span>Handle Events</span></i>
                     </Link> 
 
                     <Link {...{href:'/belleza', className:path === "/belleza" ? 'link-active-h': ''}}>

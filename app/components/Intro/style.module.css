@@ -42,3 +42,38 @@
     object-fit: cover;
     object-position: top;
 }
+
+/* 
+@media only screen and (max-width: 1300px) {
+
+    .backgroundImage{
+        height: 130vh;
+    }
+    .introImage{
+        width: 25vw;
+        height: 35vh;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    .backgroundImage{
+        height: 120vh;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+
+    .backgroundImage{
+        height: 100vh;
+    }
+    .introImage{
+        width: 35vw;
+        height: 40vh;
+    }
+    
+    
+} */

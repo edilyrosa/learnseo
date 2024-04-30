@@ -1,10 +1,10 @@
-import "../globals.css";
-import Headers from "../header/Header"
-import Banner from "../legalBanner/Banner"
-import Sumary from '../sumary/Sumary.jsx'
-import { montserrat } from '../fonts'
-import '../HeadLogo.css'
-import logo from '../assets/bobS.gif'
+import "../../globals.css";
+import Headers from "../../header/Header"
+import Banner from "../../legalBanner/Banner"
+import Sumary from '../../sumary/Sumary.jsx'
+import { montserrat } from '../../fonts'
+import '../../HeadLogo.css'
+import logo from '../../assets/bobS.gif'
 import Image from 'next/image';
 
 import { FaFacebook, FaInstagramSquare, FaTiktok } from "react-icons/fa";

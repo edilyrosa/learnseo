@@ -72,7 +72,7 @@ export default function Home() {
     <body className={styles.main}>
         <Intro />
         <Description />
-        <Projects />
+     <div style={{height:'30vh'}}></div>
     </body>
 
   )

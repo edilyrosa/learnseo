@@ -1,5 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
-import BodyPage from '../components/viewPages/BodyPage.jsx'
+//import BodyPage from '../../components/viewPages/BodyPage.jsx'
+import '../elementsjs/globals.css'
 
 export default async function Events() {
   let news = [
@@ -61,7 +62,8 @@ export default async function Events() {
       <meta name="keywords" content='avaScript, HTML, DOM, get element, create element, update element, show element, hide element, remove element, interactively, manipulate HTML element, dynamic, HTML element, web development'/>
    </head>
 
-        <BodyPage news={news}/>
+        {/* <BodyPage news={news}/> */}
+        <h2>HOLA</h2>
     </>
   );
 }

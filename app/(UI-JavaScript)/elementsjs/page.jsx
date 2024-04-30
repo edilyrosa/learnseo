@@ -1,6 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
-import BodyPage from '../components/viewPages/BodyPage.jsx'
-import './globals.css'
+import BodyPage from '../../components/viewPages/BodyPage.jsx'
+import '../../globals.css'
 export default async function Elements() {
   let news = [
     {

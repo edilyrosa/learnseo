@@ -56,6 +56,8 @@ import Description from './components/Description';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
 import Headers from "./header/Header"
+import { HeroParallax } from '@/components/ui/hero-parallax';
+import HeroParallaxDemo from './(UI-JavaScript)/javascript/HeroParallaxDemo';
 export default function Home() {
 
   useEffect( () => {
@@ -69,21 +71,9 @@ export default function Home() {
 
   return (
    
-    <body className={styles.main}>
-        <Intro />
-        <Description />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <p>
-          Hello
-        </p>
-        {/* <Projects /> */}
+    <body>
+        <HeroParallaxDemo/>
 
-     <div style={{height:'30vh'}}></div>
     </body>
 
   )

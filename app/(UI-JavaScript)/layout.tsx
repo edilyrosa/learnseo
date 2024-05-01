@@ -1,10 +1,10 @@
-import "../../globals.css";
-import Headers from "../../header/Header"
-import Banner from "../../legalBanner/Banner"
-import Sumary from '../../sumary/Sumary.jsx'
-import { montserrat } from '../../fonts'
-import '../../HeadLogo.css'
-import logo from '../../assets/bobS.gif'
+import "./globals.css";
+import Headers from "../header/Header"
+import Banner from "../legalBanner/Banner"
+import Sumary from '../sumary/Sumary.jsx'
+import { montserrat } from '../fonts'
+import '../HeadLogo.css'
+import logo from '../assets/bobS.gif'
 import Image from 'next/image';
 
 import { FaFacebook, FaInstagramSquare, FaTiktok } from "react-icons/fa";
@@ -18,7 +18,6 @@ export default function LayoutPages({ children }: { children: React.ReactNode })
 
 return (
     <html lang="es">
-    <Headers/>
     <head>
 
       {/* Google Analitics */}
@@ -106,7 +105,7 @@ return (
     <link rel="mask-icon" href="https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/logo-ultimochisme%20-%20Copy.png?alt=media&token=e2866bf0-236a-4215-8236-15d6bc6993da" color="#fff"/>
 
     </head>
-
+    <Headers/>
     <body className="body">
        {/* Google Tag Manager (noscript) */}
        <noscript>
@@ -135,39 +134,6 @@ return (
       </div>
        <Sumary/>
     </body>
-    
-    <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
-        <p>
-          Hecho por: {" "}
-          <a
-            href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-            target="_blank"
-            className="font-bold hover:underline"
-            rel="noreferrer"
-            style={{paddingRight:'20px'}} 
-            >
-            Aprende Javascript y SEO
-          </a>
-          <span style={{paddingRight:'20px'}} >Siguenos:</span>
-        </p>
-        <br/>
-        
-        <Link style={{paddingRight:'20px'}} {...{href: '/'} }target="_blank" > 
-            <i > <FaFacebook /></i>
-        </Link >
-        
-        <Link style={{paddingRight:'20px'}}  {...{href: 'https://www.instagram.com/ultimochisme/'}} target="_blank"> 
-        <i > <FaInstagramSquare /> </i>
-        </Link>
-        
-        <Link style={{paddingRight:'20px'}}  {...{href: 'https://www.tiktok.com/search?lang=en&q=%40ultimochisme&t=1713234158046'}} target="_blank" > 
-        <i > <FaTiktok /> </i>
-        </Link>
-       
-        
-      
-      </footer>
-      <Banner/>
 
   </html>
   );

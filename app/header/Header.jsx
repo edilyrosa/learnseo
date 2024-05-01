@@ -66,9 +66,6 @@ function Header() {
                         <i> <span>Secretos de Belleza</span></i>
                     </Link> 
 
-                    {/*<Link {...{href:'/viaje', className:path === "/viaje"? 'link-active-h': ''}}>
-                        <i> <span>Viajes y Destinos</span></i>
-                    </Link>*/}
 
                     <Link {...{href:'/deportes', className:path === "/deportes"? 'link-active-h': ''}}>
                         <i> <span>Deportes</span></i>
@@ -77,10 +74,6 @@ function Header() {
                     <Link {...{href:'/horoscopo', className:path === "/horoscopo"? 'link-active-h': ''}}>
                         <i> <span>Tu horoscopo</span></i>
                     </Link>
-
-                    {/* <Link {...{href:'/entretenimiento', className:path === "/entretenimiento"? 'link-active-h': ''}}>
-                        <i> <span>Entretenimiento</span></i>
-                    </Link> */}
 
                 </section>
         </div>);

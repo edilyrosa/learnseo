@@ -40,17 +40,35 @@ span:hover{
   text-decoration: underline;
 }
 
-
-
 section.banner-logo-head{
   margin-left: 0;
-  /* height: 8vh; */
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 
 }
+
+div.head.head-home {
+  box-shadow: 0 0 4rem white;
+  height: 11vh;
+  background: white;
+  box-shadow: 0 0 2rem white;
+  
+}
+
+section.banner-logo-head-home{
+  justify-content: center;
+  background-color: white;
+
+}
+
+
+section.banner-logo-head-home * span {
+  margin-left: 10%;
+  color: black;
+}
+
 
 section.banner-logo-head * span {
   padding: 2px;
@@ -61,10 +79,19 @@ section.banner-logo-head * span {
   font-weight: bold;
 }
 
+section.banner-logo-head-home * span {
+  font-size: 1.5rem;
+}
+
+
 
 
 .banner-logo-head *{
   margin: 0;
+}
+.banner-logo-head-home *{
+  margin: -10px auto;
+  font-size: 3rem;
 }
 
 .header {
@@ -112,6 +139,10 @@ section.banner-logo-head * span {
     height: 2px;
     background-color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
+  }
+  .banner-logo-head-home span::before,
+  .banner-logo-head-home span::after {
+    background-color: rgb(42, 248, 245);
   }
   
   .banner-logo-head span::before {

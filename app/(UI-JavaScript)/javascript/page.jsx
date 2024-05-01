@@ -26,7 +26,18 @@ export default async function Window() {
   return (
 
     <>
-        <BodyPage news={news}/>
+          <div>
+            shooce the lecture.
+          </div>
     </>
   );
 }
+
+
+
+
+
+
+
+
+

@@ -41,15 +41,20 @@ footer{
 body {
   font-family: 'montserrat', 'Arial Narrow', Arial, sans-serif;
   color: rgb(var(--foreground-rgb));
-  /* background: rgba(245, 213, 218, 0.701); */
-  background-image: url('./assets/background.gif');
-  background-image: url('./assets/back.gif');
-  background-repeat: repeat;
   background: rgb(250, 249, 249);
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(17,245,249,0.6475840336134453) 36%, rgba(255,255,255,1) 79%, rgba(255,255,255,0.9949229691876751) 80%, rgba(255,255,255,0.9949229691876751) 85%, rgba(255,255,255,0.9949229691876751) 87%);
   
 }
+
+div.view-home{
+  background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(17,245,249,0.6475840336134453) 36%, rgba(255,255,255,1) 79%, rgba(255,255,255,0.9949229691876751) 80%, rgba(255,255,255,0.9949229691876751) 85%, rgba(255,255,255,0.9949229691876751) 87%);
+} 
+
+div.view-sections{
+  margin: 5%;
+  padding: 1%;
+  background: #fff;
+}
+
 
 @layer utilities {
   .text-balance {
@@ -120,6 +125,19 @@ section.two-siblings img:hover {
   margin: 3% auto
 }
 
+
+footer, 
+footer.footer{
+  color: white;
+  background: #000;
+  padding: 4vh;
+  margin: 0;
+  height: 10vh;
+}
+footer.footer > hr{
+  background-color:#000;
+
+}
 
 
 .main-text-img {

@@ -1,8 +1,10 @@
-import { createClient } from "@/utils/supabase/server";
+import { createClient } from "../../../utils/supabase/server";
 import BodyPage from '../../components/viewPages/BodyPage.jsx'
+import TracingBeamDemo from './TracingBeamDemo.jsx'
 import '../globals.css'
+import Header from '../../header/Header.jsx'
 
-export default async function Window() {
+export default async function JavaScriptHome() {
   let news = [
     {
       title: '',
@@ -25,19 +27,11 @@ export default async function Window() {
    
   return (
 
-    <>
-          <div>
-            shooce the lecture.
-          </div>
-    </>
+            <div>
+             <Header/>
+             <div style={{height:'12vh'}}></div>
+              <TracingBeamDemo/>
+            </div>
   );
 }
-
-
-
-
-
-
-
-
 

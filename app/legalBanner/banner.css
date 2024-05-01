@@ -6,7 +6,7 @@ div.head-banner {
   height: 8vh;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0 0 2rem rgba(46, 46, 46, 0.97);
+  /* box-shadow: 0 0 2rem rgba(46, 46, 46, 0.97); */
   z-index: 999;
 }
 div.head-banner > {

@@ -41,7 +41,15 @@ function Header() {
                      <Link {...{href: '/', className: path === '/' ? 'link-active-h' : ''}} >  
                     
                         <i > 
-                         <span>Home</span> 
+                         <span>Home Page</span> 
+                        </i>
+                    </Link>
+
+
+                     <Link {...{href: '/javascript', className: path === '/javascript' ? 'link-active-h' : ''}} >  
+                    
+                        <i > 
+                         <span>JavaScript</span> 
                         </i>
                     </Link>
 
@@ -58,22 +66,12 @@ function Header() {
                         <i >  <span>HTML Elements</span></i>
                     </Link> 
 
-                    <Link {...{href:'/eventsjs', className:path === "/events" ? 'link-active-h': ''}}>
+                    <Link {...{href:'/eventsjs', className:path === "/eventsjs" ? 'link-active-h': ''}}>
                         <i>  <span>Handle Events</span></i>
                     </Link> 
 
-                    <Link {...{href:'/belleza', className:path === "/belleza" ? 'link-active-h': ''}}>
-                        <i> <span>Secretos de Belleza</span></i>
-                    </Link> 
+               
 
-
-                    <Link {...{href:'/deportes', className:path === "/deportes"? 'link-active-h': ''}}>
-                        <i> <span>Deportes</span></i>
-                    </Link>
-
-                    <Link {...{href:'/horoscopo', className:path === "/horoscopo"? 'link-active-h': ''}}>
-                        <i> <span>Tu horoscopo</span></i>
-                    </Link>
 
                 </section>
         </div>);

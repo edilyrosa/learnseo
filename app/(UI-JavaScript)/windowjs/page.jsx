@@ -1,7 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import BodyPage from '../../components/viewPages/BodyPage.jsx'
 import '../globals.css'
-
+import Header from '../../header/Header.jsx'
 export default async function Window() {
   let news = [
     {
@@ -25,8 +25,11 @@ export default async function Window() {
    
   return (
 
-    <>
-        <BodyPage news={news}/>
-    </>
+    <div>
+              <Header/>
+              <div div className="view-sections">
+              <BodyPage news={news}/>
+              </div>
+            </div>
   );
 }

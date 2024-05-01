@@ -9,8 +9,9 @@ div.div-container-img{
     max-height: 55.8vh;
     margin: 1px;
 }
+ /* div.container-horizontal-img{
 
-
+} */
 
  @media only screen and (max-width: 767px) {
     div.div-container-img{

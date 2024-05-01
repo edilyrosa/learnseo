@@ -150,7 +150,7 @@ return (
    
     </body>
     
-    <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
+    {/* <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
         <p>
           Hecho por: {" "}
           <a
@@ -180,7 +180,8 @@ return (
        
         
       
-      </footer>
+      </footer> */}
+             <div style={{height:'2vh'}}></div>
       <Banner/>
 
   </html>

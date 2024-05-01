@@ -133,7 +133,38 @@ return (
         {children} 
       </div>
        <Sumary/>
+
     </body>
+    
+     <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
+        <p>
+          Hecho por: {" "}
+          <a
+            href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
+            target="_blank"
+            className="font-bold hover:underline"
+            rel="noreferrer"
+            style={{paddingRight:'20px'}} 
+            >
+            Aprende Javascript y SEO
+          </a>
+          <span style={{paddingRight:'20px'}} >Siguenos:</span>
+        </p>
+        <br/>
+        
+        <Link style={{paddingRight:'20px'}} {...{href: '/'} }target="_blank" > 
+            <i > <FaFacebook /></i>
+        </Link >
+        
+        <Link style={{paddingRight:'20px'}}  {...{href: 'https://www.instagram.com/ultimochisme/'}} target="_blank"> 
+        <i > <FaInstagramSquare /> </i>
+        </Link>
+        
+        <Link style={{paddingRight:'20px'}}  {...{href: 'https://www.tiktok.com/search?lang=en&q=%40ultimochisme&t=1713234158046'}} target="_blank" > 
+        <i > <FaTiktok /> </i>
+        </Link>
+      
+      </footer> 
 
   </html>
   );

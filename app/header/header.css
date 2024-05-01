@@ -234,5 +234,16 @@ section.banner-logo-head * span {
     padding-top: -7px;
   
   }
+  .banner-logo-head-home *{
+    margin: -6% auto;
+  }
+  
+div.head.head-home {
+  height: 9vh;
+}
+section.banner-logo-head-home * span {
+  font-size: .8rem;
+}
+
 
 }

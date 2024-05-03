@@ -42,19 +42,40 @@ body {
   font-family: 'montserrat', 'Arial Narrow', Arial, sans-serif;
   color: rgb(var(--foreground-rgb));
   background: rgb(250, 249, 249);
-  
+
+}
+
+body.the-body{
+  background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(17,245,249,0.6475840336134453) 36%, rgba(255,255,255,1) 79%, rgba(255,255,255,0.9949229691876751) 80%, rgba(255,255,255,0.9949229691876751) 85%, rgba(255,255,255,0.9949229691876751) 87%);
+
+}
+body.the-body * .path-bean {
+  margin-left: 1vw;
 }
 
 div.view-home{
   background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(17,245,249,0.6475840336134453) 36%, rgba(255,255,255,1) 79%, rgba(255,255,255,0.9949229691876751) 80%, rgba(255,255,255,0.9949229691876751) 85%, rgba(255,255,255,0.9949229691876751) 87%);
 } 
+ 
+div.father-article{
+ max-width: 100%;
+
+} 
+/*
+div.view-sections div.father-article *{
+  max-width: 100%;
+}*/
 
 div.view-sections{
-  margin: 5%;
+  margin: 4%;
   padding: 1%;
   background: #fff;
 }
 
+div.view-sections > p {
+  width: 100%;
+  text-align: justify;
+}
 
 @layer utilities {
   .text-balance {
@@ -225,13 +246,32 @@ padding: 5px;
 }
 
 div.body-article pre > code{
- color: red;
- font-weight: bold;
-
+  color: rgba(17,245,249,0.6475840336134453) ;
+  font-size: .8rem;
 }
 
+div.body-article pre{
+  background: rgb(1, 2, 36);
+ }
+
 /* Responsividad para pantallas menores a 768px */
+@media only screen and (max-width: 1300px) {
+  body.the-body * .path-bean {
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  div.body-article pre > code{
+    font-size: .6rem;
+   }
+}
+
 @media only screen and (max-width: 1000px) {
+
+  body.the-body * .path-bean {
+    margin-left: 7vw;
+  }
   .body {
     grid-template-columns: 100%; 
     font-size: 18px;
@@ -272,11 +312,18 @@ div.body-article pre > code{
   
 } 
 
+@media only screen and (max-width: 850px) {
+  div.body-article pre > code{
+    font-size: .4rem;
+   }
+}
 
 /* Estilos específicos para dispositivos móviles con ancho máximo de 767px */
 @media (max-width: 767px) {
 
- 
+  body.the-body * .path-bean {
+    margin-left: .2%;
+  }
   main.main{
     margin-right:5px;
   }

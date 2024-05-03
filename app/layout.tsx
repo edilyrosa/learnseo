@@ -1,5 +1,4 @@
 import "./globals.css";
-import HeadersHome from "./header/HeaderHome"
 import Banner from "./legalBanner/Banner"
 import Link from 'next/link';
 import { FaFacebook, FaInstagramSquare, FaTiktok } from "react-icons/fa";
@@ -8,7 +7,7 @@ export default function LayoutPages({ children }: { children: React.ReactNode })
 
 return (
     <html lang="en">
-    <body>
+    <body className="the-body">
       <main>
          {children} 
       </main>
@@ -17,7 +16,7 @@ return (
       
         <footer className="w-full border-t-foreground/10 p-8 flex justify-center text-center text-xs footer">
           <p>
-            Hecho por: {" "}
+            Made by: {" "}
             <a
               href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
               target="_blank"
@@ -25,9 +24,9 @@ return (
               rel="noreferrer"
               style={{paddingRight:'20px'}} 
               >
-              Aprende Javascript y SEO
+              Mora Dev.
             </a>
-            <span style={{paddingRight:'20px'}} >Siguenos:</span>
+            {/* <span style={{paddingRight:'20px'}} >Siguenos:</span> */}
           </p>
           <br/>
           

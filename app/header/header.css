@@ -4,15 +4,13 @@
   padding:0 5px;
   margin: 20px;
   color: white;
+  color: #000;
 }
 
 i.icon-hamburger {
   margin: 3px 20px;
 }
 
-.parrafo{
-  margin: 3px 20px;
-}
 
 .icon-hamburger:hover {
   cursor: pointer;
@@ -21,14 +19,14 @@ i.icon-hamburger {
 div.head {
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 9vh;
   overflow: hidden;
   width: 100%;
   box-shadow: 0 0 2rem aqua;
 
   background: rgb(4,145,249);
   background: radial-gradient(circle, rgba(4,145,249,1) 25%, rgba(104,210,224,0.9949229691876751) 83%);
-
+  background: white;
   z-index: 999;
 }
 
@@ -44,14 +42,14 @@ section.banner-logo-head{
   margin-left: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
 }
 
 div.head.head-home {
   box-shadow: 0 0 4rem white;
-  height: 11vh;
+  height: 10vh;
   background: white;
   box-shadow: 0 0 2rem white;
   
@@ -77,6 +75,7 @@ section.banner-logo-head * span {
   margin-right: 20px;
   font-size: 18px;
   font-weight: bold;
+  
 }
 
 section.banner-logo-head-home * span {
@@ -97,17 +96,18 @@ section.banner-logo-head-home * span {
 .header {
     margin: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   
   }
   
+ section.banner-logo-head * span {
+  max-width: 0 auto;
+ }
+
  .banner-logo-head * span {
-    margin: 0 2%;
     display: inline-block;
-    justify-content: space-between;
-    justify-content: baseline;
-
-
+     justify-content: center;
+    align-items: center;
     
   } 
 
@@ -126,6 +126,7 @@ section.banner-logo-head-home * span {
     position: relative;
     display: inline-block;
     color: rgb(255, 255, 255);
+    color: black;
     text-decoration: none;
     padding: 0 10px;
     margin: 0 5px;
@@ -138,6 +139,7 @@ section.banner-logo-head-home * span {
     width: 0;
     height: 2px;
     background-color: rgb(255, 255, 255);
+    background-color: rgb(42, 248, 245);
     transition: all 0.3s ease-in-out;
   }
   .banner-logo-head-home span::before,
@@ -164,24 +166,31 @@ section.banner-logo-head-home * span {
   .banner-logo-head span:hover::after {
     width: 100%;
   } 
-
-
   .link-active-h span {
     text-decoration: underline;
   }
 
+  i.icon-hamburger {
+    margin-left: 0;
+    width: 10%;
+    color: black;
+  }
+  .parrafo{
+    margin: 3px 20px;
+    color: black;
+
+  }
 
 /* Estilos específicos para dispositivos móviles con ancho máximo de 767px */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   section.banner-logo-head * span, label {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-  
   }
 }
   
 
-/* Estilos específicos para dispositivos móviles con ancho máximo de 767px */
+
 @media (max-width: 767px) {
   
 .icon-hamburger * {
@@ -189,6 +198,7 @@ section.banner-logo-head-home * span {
   padding:0 5px;
   margin: 10px;
   color: white;
+  color: rgb(42, 248, 245);;
 }
 
 i.icon-hamburger {

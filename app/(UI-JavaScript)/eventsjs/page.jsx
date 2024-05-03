@@ -3,12 +3,16 @@ import { createClient } from "@/utils/supabase/server";
 import '../globals.css'
 import Header from '../../header/Header.jsx'
 import BodyPage from '../../components/viewPages/BodyPage.jsx'
+import TracingBeamBodyArticle from "../../components/UI-Components/TracingBeamBodyArticle.jsx";
 
 export default async function Events() {
   let news = [
     {
       title: '',
       body: '',
+      badge:'',
+      img_url:'',
+      img_alt:'',
       keywords:'',
     }
   ];
@@ -16,7 +20,7 @@ export default async function Events() {
   const supabase = createClient();
 
   try {
-    const { data: news1 } = await supabase.from("articleJS_ObjWindow").select(); //!"articleJS_events"
+    const { data: news1 } = await supabase.from("articleJS_events").select(); 
     if (news1) {
       news = news1;
     }
@@ -28,9 +32,9 @@ export default async function Events() {
   return (
           <div>
              <Header/>
-             <div style={{height:'12vh'}}></div>
+             <div style={{height:'4vh'}}></div>
              <div div className="view-sections">
-              <BodyPage news={news}/>
+              <TracingBeamBodyArticle news={news}/>
               </div>
           </div>
   );

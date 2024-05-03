@@ -1,5 +1,4 @@
 import { createClient } from "../../../utils/supabase/server";
-import BodyPage from '../../components/viewPages/BodyPage.jsx'
 import TracingBeamDemo from './TracingBeamDemo.jsx'
 import '../globals.css'
 import Header from '../../header/Header.jsx'

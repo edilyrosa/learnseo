@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
-import Sidebar from "../sideBar/Sidebar.jsx";
+import SidebarJavaScript from "../sideBar/SidebarJavaScript";
 
 const initialTheme = true //light
 function Header() {
@@ -34,7 +34,7 @@ function Header() {
                     <i className="icon-hamburger"><FontAwesomeIcon icon={faBars} onClick={handleSidebarMenu}/></i> 
                     {/* <label className= {`${montserrat.className} antialiased parrafo`} >Learn JavaScript... </label>  */}
                         
-                        {menuOpen && <Sidebar />} 
+                        {menuOpen && <SidebarJavaScript />} 
                     
 
 
@@ -68,10 +68,7 @@ function Header() {
 
                     <Link {...{href:'/eventsjs', className:path === "/eventsjs" ? 'link-active-h': ''}}>
                         <i>  <span>Handle Events</span></i>
-                    </Link> 
-
-               
-
+                    </Link>
 
                 </section>
         </div>);

@@ -1,7 +1,7 @@
 import { createClient } from "../../../utils/supabase/server";
 import TracingBeamDemo from './TracingBeamDemo.jsx'
 import '../globals.css'
-import Header from '../../header/Header.jsx'
+import HeaderJavaScript from '../../header/HeaderJavaScript'
 
 export default async function JavaScriptHome() {
   let news = [
@@ -27,7 +27,7 @@ export default async function JavaScriptHome() {
   return (
 
             <div>
-             <Header/>
+             <HeaderJavaScript/>
              <div style={{height:'12vh'}}></div>
               <TracingBeamDemo/>
             </div>

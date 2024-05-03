@@ -7,7 +7,7 @@ div.navbar{
 .navbar {
     width: 4.5vw;
     height: 90%;
-    background-color:rgba(11, 8, 0, 0.626);
+    background-color:rgba(11, 8, 0, 0.484);
     position: fixed; /* Cambiar de 'sticky' a 'fixed' para superponer */
     top: 10vh;
     left: 3px; /* Fijar el navbar en la parte izquierda de la ventana */
@@ -73,6 +73,7 @@ div.navbar{
 .menu li span{
     display: none;
     margin-right: 1px;
+    color: #fff;
 }
 
 .menu li:hover span{

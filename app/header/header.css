@@ -2,13 +2,12 @@
 .icon-hamburger * {
   font-size: 40px;
   padding:0 5px;
-  margin: 20px;
-  color: white;
+  margin: 5px;
   color: #000;
 }
 
 i.icon-hamburger {
-  margin: 3px 20px;
+  margin: 3px 5px;
 }
 
 
@@ -79,7 +78,7 @@ section.banner-logo-head * span {
 }
 
 section.banner-logo-head-home * span {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 
@@ -137,7 +136,7 @@ section.banner-logo-head-home * span {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 4px;
     background-color: rgb(255, 255, 255);
     background-color: rgb(42, 248, 245);
     transition: all 0.3s ease-in-out;
@@ -172,7 +171,7 @@ section.banner-logo-head-home * span {
 
   i.icon-hamburger {
     margin-left: 0;
-    width: 10%;
+
     color: black;
   }
   .parrafo{
@@ -182,13 +181,36 @@ section.banner-logo-head-home * span {
   }
 
 /* Estilos específicos para dispositivos móviles con ancho máximo de 767px */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   section.banner-logo-head * span, label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    margin-top: 10px;
   }
+  section.banner-logo-head{
+    justify-content: flex-start;
+    align-items: start;
+  }
+  
+  i.icon-hamburger {
+    margin-left: 1%;
+  }
+
 }
   
+@media (max-width: 900px) {
+  section.banner-logo-head * span, label {
+    font-size: 14px;
+  }
+  section.banner-logo-head{
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  i.icon-hamburger {
+    margin-right: 0;
+  }
+}
 
 
 @media (max-width: 767px) {
@@ -197,12 +219,8 @@ section.banner-logo-head-home * span {
   font-size: 20px;
   padding:0 5px;
   margin: 10px;
-  color: white;
-  color: rgb(42, 248, 245);;
-}
-
-i.icon-hamburger {
-  margin: 3px 5px;
+  color: rgb(0, 0, 0);
+  margin-right: 0;
 }
 
 .parrafo{
@@ -220,6 +238,7 @@ div.head {
 section.banner-logo-head * span {
   padding: 1px;
   margin: 0;
+  margin-top: 10px;
   margin-right: 8px;
   font-size: 16px;
 }
@@ -247,13 +266,16 @@ section.banner-logo-head * span {
   .banner-logo-head-home *{
     margin: -6% auto;
   }
-  
-div.head.head-home {
-  height: 9vh;
-}
-section.banner-logo-head-home * span {
-  font-size: .8rem;
-}
+    
+  div.head.head-home {
+    height: 9vh;
+  }
+  section.banner-logo-head-home * span {
+    font-size: 14px;
+  }
 
-
+  i.icon-hamburger {
+    margin-left: 1%;
+  }
+   
 }

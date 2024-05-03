@@ -59,12 +59,7 @@ div.view-home{
  
 div.father-article{
  max-width: 100%;
-
 } 
-/*
-div.view-sections div.father-article *{
-  max-width: 100%;
-}*/
 
 div.view-sections{
   margin: 4%;
@@ -246,7 +241,7 @@ padding: 5px;
 }
 
 div.body-article pre > code{
-  color: rgba(17,245,249,0.6475840336134453) ;
+  color:#00ffff !important;
   font-size: .8rem;
 }
 

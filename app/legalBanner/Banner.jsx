@@ -19,19 +19,15 @@ function Banner() {
                     </Link>
 
                     <Link {...{href: '/politicas-de-privacidad', className: path === "/politicas-de-privacidad" ? 'link-active-h': ''}}>
-                        <i >  <span>Politicas de Privacidad</span></i>
+                        <i >  <span>Privacy Policy</span></i>
                     </Link> 
 
                     <Link {...{href:'/aviso-legal', className:path === "/aviso-legal" ? 'link-active-h': ''}}>
-                        <i>  <span>Aviso Legal</span></i>
+                        <i>  <span>Legal Notice</span></i>
                     </Link> 
 
-                    {/* <Link {...{href:'/belleza', className:path === "/belleza" ? 'link-active-h': ''}}>
-                        <i> <span>Contacto</span></i>
-                    </Link>  */}
-
                     <Link {...{href:'/sobre-mi', className:path === "/sobre-mi"? 'link-active-h': ''}}>
-                        <i> <span>Sobre mí</span></i>
+                        <i> <span>About me</span></i>
                     </Link>
 
                 </section>

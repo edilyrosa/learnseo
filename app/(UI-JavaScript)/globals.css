@@ -41,10 +41,6 @@ footer{
 body {
   font-family: 'montserrat', 'Arial Narrow', Arial, sans-serif;
   color: rgb(var(--foreground-rgb));
-  /* background: rgba(245, 213, 218, 0.701); */
-  background-image: url('../assets/background.gif');
-  background-image: url('../assets/back.gif');
-  background-repeat: repeat;
   background: rgb(245, 243, 243)
   
 }

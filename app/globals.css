@@ -61,6 +61,16 @@ div.father-article{
  max-width: 100%;
 } 
 
+div.big-father-bean{
+  max-width: 90%;
+}
+
+img.object-cover{
+  width: 100%;
+
+} 
+
+
 div.view-sections{
   margin: 4%;
   padding: 1%;

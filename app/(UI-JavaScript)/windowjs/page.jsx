@@ -1,12 +1,16 @@
 import { createClient } from "@/utils/supabase/server";
-import BodyPage from '../../components/viewPages/BodyPage.jsx'
+import HeaderJS from "../../header/HeaderJavaScript"
+import TracingBeamBodyArticle from "../../components/UI-Components/TracingBeamBodyArticle.jsx";
 import '../globals.css'
-import Header from '../../header/Header.jsx'
 export default async function Window() {
+ 
   let news = [
     {
       title: '',
       body: '',
+      badge:'',
+      img_url:'',
+      img_alt:'',
       keywords:'',
     }
   ];
@@ -25,11 +29,12 @@ export default async function Window() {
    
   return (
 
-    <div>
-              <Header/>
-              <div div className="view-sections">
-              <BodyPage news={news}/>
-              </div>
+      <div>
+            <HeaderJS/>
+            <div style={{height:'4vh'}}></div>
+            <div div className="view-sections">
+            <TracingBeamBodyArticle news={news}/>
             </div>
+      </div>
   );
 }

@@ -1,0 +1,16 @@
+div.big-father-bean{
+    width: 100%;
+}
+div.father-article {
+    width: 100vw;
+}
+
+svg.path-tow{
+    max-height: 100%;
+    overflow: hidden;
+}
+
+div.path-bean{
+    max-height: 100%;
+    overflow: hidden;
+}

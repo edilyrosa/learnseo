@@ -7,16 +7,6 @@ import {montserrat} from '../../fonts'
 
 export default function TracingBeamDemo( {news} ) {
   
-  // let news = [
-  //   {
-  //     title: '',
-  //     body: '',
-  //     badge:'',
-  //     img_url:'',
-  //     img_alt:'',
-  //     keywords:'',
-  //   }
-  // ];
 
   return (
     
@@ -24,7 +14,7 @@ export default function TracingBeamDemo( {news} ) {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         <h2>WHY LEARN JAVASCRIPT?</h2>
         {news.map((item, index) => ( //aqio
-          <div key={`content-${index}`} className="mb-10">
+          <div key={`content-${index}`} className="mb-10 div-img-bean-article">
             <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.badge}
             </h2>
@@ -39,11 +29,11 @@ export default function TracingBeamDemo( {news} ) {
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
-                  className="rounded-lg mb-10 object-cover"
+                  className="rounded-lg mb-10 object-cover img-bean-article"
                 />
               )}
             
-            <div className={`${montserrat.className} main-text-img text-sm prose prose-sm dark:prose-invert`} dangerouslySetInnerHTML={{ __html: item.body }}>
+            <div className={`${montserrat.className} main-text-img text-sm prose prose-sm dark:prose-invert text-img`} dangerouslySetInnerHTML={{ __html: item.body }}>
             </div>
           </div>
         ))}

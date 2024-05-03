@@ -42,7 +42,6 @@ return (
           <i > <FaTiktok /> </i>
           </Link>
         </footer>
-
       <Banner/>
   </html>
   );

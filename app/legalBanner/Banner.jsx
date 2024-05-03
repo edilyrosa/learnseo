@@ -29,7 +29,6 @@ function Banner() {
                     <Link {...{href:'/sobre-mi', className:path === "/sobre-mi"? 'link-active-h': ''}}>
                         <i> <span>About me</span></i>
                     </Link>
-
                 </section>
         </div>);
 }

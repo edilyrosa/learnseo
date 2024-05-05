@@ -264,6 +264,52 @@ pre{
   background: rgb(1, 2, 36);
  }
 
+
+ table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+td {
+  vertical-align: top;
+}
+
+th:first-child, td:first-child {
+  width: 30%;
+}
+
+th:last-child, td:last-child {
+  width: 70%;
+}
+
+th, td {
+  font-size: 16px;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
 /* Responsividad para pantallas menores a 768px */
 @media only screen and (max-width: 1300px) {
   body.the-body * .path-bean {

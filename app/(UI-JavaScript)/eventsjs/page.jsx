@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import '../globals.css'
+import './event.css'
 import HeaderJS from '../../header/HeaderJavaScript'
 import TracingBeamBodyArticle from "../../components/UI-Components/TracingBeamBodyArticle.jsx";
 

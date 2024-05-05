@@ -1,4 +1,4 @@
-
+/* 
 
 
 
@@ -146,7 +146,7 @@ hr.hr-normal{
   color: rgb(224, 0, 0);
 }
 
-/* slice of body between main and sumary */
+
 .body {
   margin-top: 9vh;
   display: grid;
@@ -172,7 +172,7 @@ section.two-siblings img{
 }
 
 
-/* body main */
+
 
 main.main * {
 margin:  5px auto;
@@ -202,7 +202,7 @@ div.body-article pre > code{
 
 }
 
-/* Responsividad para pantallas menores a 768px */
+
 @media only screen and (max-width: 1000px) {
   .body {
     grid-template-columns: 100%; 
@@ -245,7 +245,7 @@ div.body-article pre > code{
 } 
 
 
-/* Estilos específicos para dispositivos móviles con ancho máximo de 767px */
+
 @media (max-width: 767px) {
 
  
@@ -284,4 +284,4 @@ div.body-article pre > code{
 .div-container * img{
   max-width: 80%;
   height: auto;
-}
+} */

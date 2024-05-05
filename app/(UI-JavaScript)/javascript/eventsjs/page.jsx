@@ -1,7 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import './event.css'
-import HeaderJS from '../../header/HeaderJavaScript'
-import TracingBeamBodyArticle from "../../components/UI-Components/TracingBeamBodyArticle.jsx";
+import HeaderJS from '../../../header/HeaderJavaScript.jsx'
+import TracingBeamBodyArticle from "../../../components/UI-Components/TracingBeamBodyArticle.jsx";
 
 export default async function Events() {
   let news = [

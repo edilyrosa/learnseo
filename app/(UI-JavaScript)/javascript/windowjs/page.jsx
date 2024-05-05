@@ -1,6 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
-import HeaderJS from "../../header/HeaderJavaScript"
-import TracingBeamBodyArticle from "../../components/UI-Components/TracingBeamBodyArticle.jsx";
+import HeaderJS from "../../../header/HeaderJavaScript.jsx"
+import TracingBeamBodyArticle from "../../../components/UI-Components/TracingBeamBodyArticle.jsx";
 import '../globals.css'
 export default async function Window() {
  

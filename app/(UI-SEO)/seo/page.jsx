@@ -1,19 +1,15 @@
-import { createClient } from "@/utils/supabase/server";
-import TracingBeamDemo from './TracingBeamDemo.jsx'
-//import '../globals.css'
+import TracingBeamDemoSEO from './TracingBeamDemoSEO'
 import HeaderJavaScript from '../../header/HeaderJavaScript.jsx'
+//import '../globals.css'
 
 export default async function JavaScriptHome() {
-
-  const supabase = createClient();
 
   return (
 
             <div>
              <HeaderJavaScript/>
              <div style={{height:'12vh'}}></div>
-              <TracingBeamDemo/>
+              <TracingBeamDemoSEO/>
             </div>
   );
 }
-

@@ -25,9 +25,9 @@ export default function TracingBeamDemo() {
                 <Image
                   src={item.image}
                   alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
+                  height="500"
+                  width="500"
+                  className="rounded-lg mb-10 object-cover img-gif"
                 />
               )}
               {item.description}
@@ -42,79 +42,62 @@ export default function TracingBeamDemo() {
 
 const dummyContent = [
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Learn JavaScript",
     description: (
       <>
         <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-          commodo et labore dolore commodo pariatur.
+        Learning JavaScript offers numerous benefits and opens up a world of possibilities 
+        in software development. By mastering JavaScript, individuals can delve into creating 
+        a wide range of software applications, including immersive video games. JavaScript's 
+        versatility allows developers to craft interactive and dynamic web applications, 
+        enhancing user experiences and engagement. 
         </p>
         <p>
-          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-          veniam in commodo id reprehenderit adipisicing. Proident duis
-          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-        </p>
-        <p>
-          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-          reprehenderit deserunt amet laborum consequat adipisicing officia qui
-          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-          Amet culpa officia aliquip deserunt veniam deserunt officia
-          adipisicing aliquip proident officia sunt.
+        Moreover, JavaScript is instrumental in developing mobile applications, 
+        server-side software, web servers, and even 
+        real-time communication applications like video conferencing platforms. Its 
+        widespread use in various domains, from web development to game design, 
+        showcases its adaptability and power in shaping modern digital experiences.
         </p>
       </>
     ),
-    badge: "Amazing React!",
+    badge: "Amazing JavaScript!",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/coquette2.jpg?alt=media&token=8625a87e-8911-46da-8bfc-3b20b5572ee5",
+      "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/learnSEO%2Fjsjs.gif?alt=media&token=b1c91213-c02f-4f99-acd2-21e61dc24011",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Then learn React",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+        Created by Facebook, React is renowned for its component-based architecture, 
+        enabling developers to build reusable user interface elements and improve 
+        the maintainability and scalability of their code. 
         </p>
         <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+        React utilizes a virtual DOM approach to optimize the performance of web applications.
         </p>
       </>
     ),
-    badge: "Changelog",
+    badge: "Amazing React",
     image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/learnSEO%2Fgiphy.gif?alt=media&token=ca399a2b-65b0-472d-8286-3e7eac11d133",
   },
   {
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "you could also master Angular",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+        Developed by Google, Angular is a comprehensive framework that provides numerous 
+        out-of-the-box features, such as data binding, dependency injection, and more. 
+        Angular follows an MVC architectural pattern and is highly modular, making it 
+        easy to create custom modules and libraries.
         </p>
       </>
     ),
-    badge: "Launch Week",
+    badge: "Amazing Angular",
     image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/learnSEO%2Fgiphy%20(1).gif?alt=media&token=a8aa6c96-f9d9-4457-b105-4d1848f08fee",
   },
 
 
@@ -122,22 +105,22 @@ const dummyContent = [
 
 
   {
-    title: "2222 Lorem Ipsum Dolor Sit Amet",
+    title: "Become into a PRO in VUE",
     description: (
       <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+      <br/>
+        <p style={{color:'#007878 '}}>
+        Vue.js is known for its simplicity and flexibility, allowing 
+        for rapid development and easy integration with existing projects. 
+        Vue.js stands out for its focus on creating reusable user interface 
+        components and its two-way data binding system, making it an excellent choice 
+        for large-scale web applications.
         </p>
       </>
     ),
-    badge: "Launch Week",
+    badge: "Amazing VUE",
     image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://firebasestorage.googleapis.com/v0/b/news-8dc1b.appspot.com/o/learnSEO%2F1_uQPuwh-rv8KI9PiYEN8AtA.gif?alt=media&token=48287cb4-413b-481c-85d7-b7ddcff0e2ec"
   },
 ];
 

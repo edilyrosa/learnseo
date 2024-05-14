@@ -325,6 +325,14 @@ img.img-gif{
 img.img-gif-seo{
   width: 100%;
 } 
+img.img-gif-built{
+  width: 40vw;
+  max-width: 40vw;
+  max-height: 60vh;
+  height: auto;
+
+
+} 
 
 
 

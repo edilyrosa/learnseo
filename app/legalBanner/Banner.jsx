@@ -18,15 +18,15 @@ function Banner() {
                         </i>
                     </Link>
 
-                    <Link {...{href: '/politicas-de-privacidad', className: path === "/politicas-de-privacidad" ? 'link-active-h': ''}}>
+                    <Link {...{href: '/privacy-policy', className: path === "/privacy-policy" ? 'link-active-h': ''}}>
                         <i >  <span>Privacy Policy</span></i>
                     </Link> 
 
-                    <Link {...{href:'/aviso-legal', className:path === "/aviso-legal" ? 'link-active-h': ''}}>
+                    <Link {...{href:'/legal-notice', className:path === "/legal-notice" ? 'link-active-h': ''}}>
                         <i>  <span>Legal Notice</span></i>
                     </Link> 
 
-                    <Link {...{href:'/sobre-mi', className:path === "/sobre-mi"? 'link-active-h': ''}}>
+                    <Link {...{href:'/about-me', className:path === "/about-me"? 'link-active-h': ''}}>
                         <i> <span>About me</span></i>
                     </Link>
                 </section>

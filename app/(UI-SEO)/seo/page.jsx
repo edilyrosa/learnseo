@@ -1,5 +1,5 @@
 import TracingBeamDemoSEO from './TracingBeamDemoSEO'
-import HeaderJavaScript from '../../header/HeaderJavaScript.jsx'
+import HeaderSEO from '../../header/HeaderSEO'
 //import '../globals.css'
 
 export default async function JavaScriptHome() {
@@ -7,7 +7,7 @@ export default async function JavaScriptHome() {
   return (
 
             <div>
-             <HeaderJavaScript/>
+             <HeaderSEO/>
              <div style={{height:'12vh'}}></div>
               <TracingBeamDemoSEO/>
             </div>

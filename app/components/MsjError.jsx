@@ -12,7 +12,7 @@ export default function MsjError () {
 
     return (
       <div style={errorMessage}>
-        <p>Hubo un error al obtener la información. Por favor, inténtalo más tarde.</p>
+        <p>There was an error obtaining the information. Please try again later.</p>
       </div>
     );
   };

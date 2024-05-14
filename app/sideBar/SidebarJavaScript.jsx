@@ -36,19 +36,19 @@ const Sidebar = () => {
         </li>
 
         <li id='li-1'>
-        <Link {...{href:'/windowjs', className: path === "/windowjs" ? 'link-active': ''}}>
+        <Link {...{href:'/javascript/windowjs', className: path === "/windowjs" ? 'link-active': ''}}>
          <i> <FontAwesomeIcon icon={faVestPatches} /> <span>Window Object</span></i>
          </Link>    
         </li>
 
         <li id='li-1'>
-        <Link {...{href:'/elementsjs', className:path === "/elementsjs" ? 'link-active': ''}}>
+        <Link {...{href:'/javascript/elementsjs', className:path === "/elementsjs" ? 'link-active': ''}}>
          <i> <FontAwesomeIcon icon={faPaintBrush} /> <span>HTML Elements</span></i>
          </Link>    
         </li>
 
         <li id='li-1'>
-        <Link {...{href:'/eventsjs', className:path === '/eventsjs' ? 'link-active': ''}}>
+        <Link {...{href:'/javascript/eventsjs', className:path === '/eventsjs' ? 'link-active': ''}}>
          <i> <FontAwesomeIcon icon={faMedal} /> <span>Handle Events</span></i>
          </Link>    
         </li>

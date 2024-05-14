@@ -49,7 +49,7 @@ const dummyContent = [
     title: "LEGAL NOTICE",
     description: (
       <>
-<p>This document is made available to users by Mora Dev, the creator of content for the official website <a href="https://learnseo.vercel.app/">https://learnseo.vercel.app/</a> (hereinafter referred to as "the Website").</p>
+<p>This document is made available to users by Mora Dev, the creator of content for the official website <a href="https://learnseo.vercel.app/" style={{color:"blue"}}> <i> https://learnseo.vercel.app/</i></a> (hereinafter referred to as "the Website").</p>
 
 <h3>Purpose</h3>
 <p>This document aims to fulfill the obligations set forth in Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSICE), the General Data Protection Regulation (GDPR), and to inform all users of the Website about the terms of use. By accessing this Website, you assume the role of the user and commit to observing and strictly complying with the provisions herein, as well as any other legal provision that may apply.</p>
@@ -95,7 +95,7 @@ const dummyContent = [
 <h3 style={{color:'#007878'}}>External Links</h3>
 <p style={{color:'#007878'}}>The Website may provide links to other websites and content owned by third parties. Mora Dev assumes no responsibility for the results of accessing these links.</p>
 
-<h2 style={{color:'#007878'}}>Cookies</h2>
+<h3 style={{color:'#007878'}}>Cookies</h3>
 <p style={{color:'#007878'}}>The Website reserves the right to use cookies to recognize frequent users and personalize their experience by pre-selecting language or desired content. Cookies collect the user's IP address, with Google being responsible for processing this information.</p>
       
       </>

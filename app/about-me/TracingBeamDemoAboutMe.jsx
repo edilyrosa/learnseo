@@ -51,13 +51,13 @@ const dummyContent = [
       <>
       <h3>Hi there! I'm Edily Mora</h3>
   <p>
-    I wear many hats! I'm a Lawyer and a Front-end Web Developer with a passion for SEO (Search Engine Optimization). JavaScript is my programming language of choice, and I love building beautiful web applications using Next.js and Node.js.
+    I wear many hats! I'm a Lawyer and a Front-end Web Developer with a passion for SEO, UX and UI. JavaScript is my programming language of choice, and I love building beautiful web applications using Next.js and Node.js.
   </p>
   <p>
     Beyond the world of code, I'm also interested in fashion, entertainment, and healthy living. This passion fuels my creativity, and I enjoy creating content related to these topics.
   </p>
   <p>
-    Feel free to reach out if you'd like to connect! You can email me at: <a href="mailto:ultimochisme1@gmail.com">ultimochisme1@gmail.com</a>
+    Feel free to reach out if you'd like to connect! You can email me at: <a href="mailto:edilyrosa@gmail.com" style={{color:"blue"}}><i>edilyrosa@gmail.com</i></a>
   </p>
   <h3 style={{color:'#007878'}}>What https://learnseo.vercel.app/?</h3>
   <br/>

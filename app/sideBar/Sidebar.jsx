@@ -25,65 +25,27 @@ const Sidebar = () => {
 
         <li id='li-1'>
          <Link {...{href: '/', className: path === '/' ? 'link-active' : ''}} > 
-            <i > <FontAwesomeIcon icon={faNewspaper} /> <span>La Portada</span></i>
+            <i > <FontAwesomeIcon icon={faNewspaper} /> <span>Home</span></i>
         </Link>
         </li>
 
         <li id='li-1'>
-          <Link {...{href:'/celebridades', className: path === "/celebridades" ? 'link-active': ''}}>
-            <i > <FontAwesomeIcon icon={faFire} /> <span>Celebridades</span></i>
+          <Link {...{href:'/javascript', className: path === "/javascript" ? 'link-active': ''}}>
+            <i > <FontAwesomeIcon icon={faFire} /> <span>Learn JavaScript</span></i>
          </Link>  
         </li>
 
         <li id='li-1'>
-        <Link {...{href:'/moda', className: path === "/moda" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faVestPatches} /> <span>Moda y Tendencias</span></i>
+        <Link {...{href:'/seo', className: path === "/seo" ? 'link-active': ''}}>
+         <i> <FontAwesomeIcon icon={faVestPatches} /> <span>Learn SEO</span></i>
          </Link>    
         </li>
 
         <li id='li-1'>
-        <Link {...{href:'/belleza', className:path === "/belleza" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faPaintBrush} /> <span>Secretos de Belleza</span></i>
+        <Link {...{href:'/css', className:path === "/css" ? 'link-active': ''}}>
+         <i> <FontAwesomeIcon icon={faPaintBrush} /> <span>Learn CSS</span></i>
          </Link>    
         </li>
-
-
-        {/* <li id='li-1'>
-        <Link {...{href:'/viaje', className:path === "/viaje" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faPlaneDeparture} /> <span>Viajes y Destinos</span></i>
-         </Link>    
-        </li> */}
-
-        <li id='li-1'>
-        <Link {...{href:'/deportes', className:path === "/deportes" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faMedal} /> <span>Deportes</span></i>
-         </Link>    
-        </li>
-
-        <li id='li-1'>
-        <Link {...{href:'/horoscopo', className:path === "/horoscopo" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faClover} /> <span> Tu Horoscopo</span></i>
-         </Link>    
-        </li>
-
-        {/* <li id='li-1'>
-        <Link {...{href:'/entretenimiento', className:path === "/entretenimiento" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faIcons} /> <span>Entretenimiento</span></i>
-         </Link>    
-        </li> */}
-
-        {/* <li id='li-1'>
-        <Link {...{href:'/salud', className:path === "/salud" ? 'link-active': ''}}>
-         <i> <FontAwesomeIcon icon={faHeartPulse} /> <span>Salud y Biestar</span></i>
-         </Link>    
-        </li>
-
-
-        <li id='li-1'>
-        <Link href='/comida' className={path === "/comida" ? 'link-active': ''}>
-         <i> <FontAwesomeIcon icon={faMortarPestle} /> <span>Comida y Recetas</span></i>
-         </Link>    
-        </li> */}
 
       </ul>
     </div>

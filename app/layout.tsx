@@ -2,6 +2,10 @@ import "./globals.css";
 import Banner from "./legalBanner/Banner"
 import Link from 'next/link';
 import { FaFacebook, FaInstagramSquare, FaTiktok } from "react-icons/fa";
+export const metadata = {
+  metadataBase: new URL('https://learnseo.vercel.app/'),
+  // other metadata properties
+}
 
 export default function LayoutPages({ children }: { children: React.ReactNode }) {
 

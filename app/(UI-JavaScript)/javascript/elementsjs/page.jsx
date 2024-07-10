@@ -17,7 +17,13 @@ export default async function Elements() {
   const supabase = createClient();
 
   try {
-    const { data: news1 } = await supabase.from("articleJS_elementsHTML").select();
+    const headers = {
+      'Content-Type': 'application/json',
+      // Add any other headers required by your Supabase setup
+    };
+    const { data: news1 } = await supabase.from("articleJS_elementsHTML")
+    .select()
+    .headers(headers);
     if (news1) {
       news = news1;
     }

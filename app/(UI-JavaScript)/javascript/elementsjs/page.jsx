@@ -3,6 +3,7 @@ import HeaderJS from "../../../header/HeaderJavaScript.jsx"
 import TracingBeamBodyArticle from "../../../components/UI-Components/TracingBeamBodyArticle.jsx";
 import '../globals.css'
 export default async function Elements() {
+  //console.log('DATAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
   let news = [
     {
       title: '',
@@ -13,19 +14,18 @@ export default async function Elements() {
       keywords:'',
     }
   ];
-
+  
   const supabase = createClient();
 
   try {
-    const headers = {
-      'Content-Type': 'application/json',
-      // Add any other headers required by your Supabase setup
-    };
+  
     const { data: news1 } = await supabase.from("articleJS_elementsHTML")
     .select()
-    .headers(headers);
+  
+    //console.log('DATA', news1);
     if (news1) {
       news = news1;
+      //console.log(news);
     }
   } catch (error) {
     console.error("Error fetching data from Supabase:", error);
@@ -33,13 +33,13 @@ export default async function Elements() {
 
    
   return (
-    <div>
+    <section>
              <HeaderJS/>
              <div style={{height:'4vh'}}></div>
              <div div className="view-sections">
               <TracingBeamBodyArticle news={news}/>
               </div>
-          </div>
+          </section>
   );
 }
 

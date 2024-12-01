@@ -4,7 +4,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../../../components/ui/tracing-beam";
 
-export default function TracingBeamDemo() {
+export default function TracingBeamDemoSEO() {
   return (
     
     <TracingBeam className="px-6">

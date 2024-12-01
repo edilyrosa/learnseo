@@ -1,7 +1,6 @@
 import "./globals.css";
 import Banner from "./legalBanner/Banner"
 import Link from 'next/link';
-import Head from 'next/head';
 import { FaFacebook, FaInstagramSquare, FaTiktok } from "react-icons/fa";
 export const metadata = {
   metadataBase: new URL('https://learnseo.vercel.app/'),
@@ -12,9 +11,9 @@ export default function LayoutPages({ children }: { children: React.ReactNode })
 
 return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="google-site-verification" content="Bqy9fOOnSmDnKQl-UhBvUjHAAkPqTV4I6MoKjcFy7vo" />
-      </Head>
+      </head>
       <body className="the-body">
         <main>
           {children} 

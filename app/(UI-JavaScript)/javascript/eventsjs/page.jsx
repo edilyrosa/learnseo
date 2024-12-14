@@ -16,13 +16,20 @@ export default async function Events() {
   ];
 
   const supabase = createClient();
+console.log(1);
 
   try {
+    console.log('try');
     const { data: news1 } = await supabase.from("articleJS_events").select(); 
     if (news1) {
+      console.log('OBJ', news1);
+      
       news = news1;
     }
+    console.log('catch after');
   } catch (error) {
+    console.log('CATCH');
+    
     console.error("Error fetching data from Supabase:", error);
   }
 

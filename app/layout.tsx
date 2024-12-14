@@ -16,7 +16,7 @@ return (
           <meta name="google-site-verification" content="Bqy9fOOnSmDnKQl-UhBvUjHAAkPqTV4I6MoKjcFy7vo" />
         </head> */}
         <Head>
-          <title>Learn SEO - Edily Mora</title>
+          <title>Learn SEO - Edily Mora </title>
           <meta name="google-site-verification" content="Bqy9fOOnSmDnKQl-UhBvUjHAAkPqTV4I6MoKjcFy7vo" />
         </Head>
       <body className="the-body">

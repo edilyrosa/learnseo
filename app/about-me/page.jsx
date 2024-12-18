@@ -3,7 +3,6 @@ import TracingBeamDemoAboutMe from "./TracingBeamDemoAboutMe";
 
 export default async function Cookies() {
 
-   
   return (
           
         <div>

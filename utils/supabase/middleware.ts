@@ -5,9 +5,13 @@ import { type NextRequest, NextResponse } from "next/server";
 
 export const updateSession = async (request: NextRequest) => {
   try {
-    console.log("Cookies en la solicitud:", request.cookies.getAll());
+    // No redirigir si ya estamos en la página de login
+    const isLoginPage = request.nextUrl.pathname === "/login"; 
+    if (isLoginPage) {
+      return NextResponse.next(); // No redirigir si ya estamos en /login
+    }
 
-    let response = NextResponse.next();
+    let response = NextResponse.next(); // Respuesta predeterminada
 
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -15,7 +19,7 @@ export const updateSession = async (request: NextRequest) => {
       {
         cookies: {
           getAll() {
-            return request.cookies.getAll();
+            return request.cookies.getAll(); // Obtener todas las cookies
           },
           setAll(cookies) {
             cookies.forEach(({ name, value, ...options }) => {
@@ -26,15 +30,13 @@ export const updateSession = async (request: NextRequest) => {
       }
     );
 
-    // Verifica la sesión del usuario
+    // Verificar si hay sesión de usuario
     const { data, error } = await supabase.auth.getUser();
-    if (error) {
-      console.error("Error de autenticación de Supabase:", error.message);
+    if (error || !data?.user) {
+      console.error("Error de autenticación de Supabase:", error?.message || "No hay usuario autenticado");
 
-      if (error.name === "AuthSessionMissingError") {
-        console.log("No se encontró sesión activa. Redirigiendo a login...");
-        return NextResponse.redirect(new URL("/login", request.url));
-      }
+      // Si no hay sesión, redirigir a la página de login
+      return NextResponse.redirect(new URL("/login", request.url));
     } else {
       console.log("Usuario autenticado:", data.user);
     }

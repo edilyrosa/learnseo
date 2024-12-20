@@ -1,49 +1,40 @@
-// utils/supabase/middleware.ts
-
-import { createServerClient } from "@supabase/ssr";
-import { type NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from 'next/server';
+import { createServerClient } from '@supabase/ssr';
 
 export const updateSession = async (request: NextRequest) => {
   try {
-    // No redirigir si ya estamos en la página de login
-    const isLoginPage = request.nextUrl.pathname === "/login"; 
-    if (isLoginPage) {
-      return NextResponse.next(); // No redirigir si ya estamos en /login
-    }
-
-    let response = NextResponse.next(); // Respuesta predeterminada
+    let response = NextResponse.next(); // Continúa sin redirigir
 
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
       {
         cookies: {
-          getAll() {
-            return request.cookies.getAll(); // Obtener todas las cookies
+          get(name: string) {
+            return request.cookies.get(name)?.value;
           },
-          setAll(cookies) {
-            cookies.forEach(({ name, value, ...options }) => {
-              response.cookies.set({ name, value, ...options });
-            });
+          set(name: string, value: string, options: any) {
+            response.cookies.set({ name, value, ...options });
+          },
+          remove(name: string, options: any) {
+            response.cookies.set({ name, value: "", ...options });
           },
         },
       }
     );
 
-    // Verificar si hay sesión de usuario
+    // Verifica si hay sesión
     const { data, error } = await supabase.auth.getUser();
-    if (error || !data?.user) {
-      console.error("Error de autenticación de Supabase:", error?.message || "No hay usuario autenticado");
-
-      // Si no hay sesión, redirigir a la página de login
-      return NextResponse.redirect(new URL("/login", request.url));
+    if (error) {
+      console.error('Supabase auth error:', error);
     } else {
-      console.log("Usuario autenticado:", data.user);
+      console.log('Supabase user:', data.user);
     }
 
+    // No se realiza ninguna redirección, solo se continúa el flujo
     return response;
   } catch (error) {
-    console.error("Error en updateSession:", error);
+    console.error('Error in updateSession:', error);
     return NextResponse.next();
   }
 };

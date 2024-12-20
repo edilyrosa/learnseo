@@ -1,53 +1,22 @@
-// import { createServerClient } from "@supabase/ssr";
-// import { type NextRequest, NextResponse } from "next/server";
-
-// export const updateSession = async (request: NextRequest) => {
-//   try {
-//     let response = NextResponse.next({
-//       request: {
-//         // Normaliza los headers a un objeto plano
-//         headers: Object.fromEntries(request.headers.entries()),
-//       },
-//     });
-
-//     const supabase = createServerClient(
-//       process.env.NEXT_PUBLIC_SUPABASE_URL!,
-//       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-//       {
-//         cookies: {
-//           get(name: string) {
-//             return request.cookies.get(name)?.value;
-//           },
-//           set(name: string, value: string, options) {
-//             request.cookies.set({ name, value, ...options });
-//             response.cookies.set({ name, value, ...options });
-//           },
-//           remove(name: string, options) {
-//             request.cookies.set({ name, value: "", ...options });
-//             response.cookies.set({ name, value: "", ...options });
-//           },
-//         },
-//       }
-//     );
-
-//     await supabase.auth.getUser();
-//     return response;
-//   } catch (e) {
-//     console.error("Error in middleware:", e);
-//     return NextResponse.next({
-//       request: {
-//         headers: Object.fromEntries(request.headers.entries()),
-//       },
-//     });
-//   }
-// };
-
-
 import { type NextRequest } from "next/server";
-import { updateSession } from "@/utils/supabase/middleware";
+import { updateSession } from "./utils/supabase/middleware";
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 export async function middleware(request: NextRequest) {
-  return await updateSession(request);
+  if (!supabaseUrl || !supabaseAnonKey) {
+    console.error('Missing Supabase environment variables');
+    throw new Error('Missing Supabase environment variables');
+  }
+
+  try {
+    console.log('Connecting to Supabase with URL:', supabaseUrl);
+    return await updateSession(request);
+  } catch (error) {
+    console.error('Error during Supabase connection:', error);
+    throw error;
+  }
 }
 
 export const config = {

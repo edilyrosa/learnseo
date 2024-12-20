@@ -9,7 +9,14 @@ export async function middleware(request: NextRequest) {
     console.error('Missing Supabase environment variables');
     throw new Error('Missing Supabase environment variables');
   }
-  return await updateSession(request);
+
+  try {
+    console.log('Connecting to Supabase with URL:', supabaseUrl);
+    return await updateSession(request);
+  } catch (error) {
+    console.error('Error during Supabase connection:', error);
+    throw error;
+  }
 }
 
 export const config = {

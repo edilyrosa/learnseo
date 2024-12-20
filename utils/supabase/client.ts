@@ -1,22 +1,12 @@
-// utils/supabase/client.ts
-import { createPagesBrowserClient } from '@supabase/auth-helpers-nextjs';
-import { Database } from './types';
+// src/utils/supabase/client.ts
 
-export const createSupabaseClient = () => {
-  return createPagesBrowserClient<Database>({
-    supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    supabaseKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-  });
-};
+import { createClient } from '@supabase/supabase-js';
 
-// Ejemplo de obtención de usuario sin redirección
-export const getUser = async () => {
-  const supabase = createSupabaseClient();
-  const user = await supabase.auth.getUser();
+// Supongo que tienes tus variables de entorno configuradas
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-  if (user.data) {
-    console.log('User logged in:', user.data);
-  } else {
-    console.log('No user logged in');
-  }
-};
+// Crea el cliente de Supabase
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+export { supabase };

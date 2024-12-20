@@ -1,4 +1,4 @@
-import { createServerClient, type CookieOptionsWithName } from "@supabase/ssr";
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
 export const createClient = () => {
@@ -10,28 +10,66 @@ export const createClient = () => {
     {
       cookies: {
         get(name: string) {
-          // Recupera una cookie por nombre
-          return cookieStore.get(name)?.value || null;
+          return cookieStore.get(name)?.value;
         },
-        set(name: string, value: string, options?: CookieOptionsWithName) {
+        set(name: string, value: string, options: CookieOptions) {
           try {
-            // Establece una cookie con nombre, valor y opciones
             cookieStore.set({ name, value, ...options });
           } catch (error) {
-            // Manejo de errores al establecer cookies en componentes del servidor
-            console.error(`Error setting cookie "${name}":`, error);
+            // The `set` method was called from a Server Component.
+            // This can be ignored if you have middleware refreshing
+            // user sessions.
           }
         },
-        remove(name: string, options?: CookieOptionsWithName) {
+        remove(name: string, options: CookieOptions) {
           try {
-            // Borra la cookie configurándola con un valor vacío
             cookieStore.set({ name, value: "", ...options });
           } catch (error) {
-            // Manejo de errores al eliminar cookies en componentes del servidor
-            console.error(`Error removing cookie "${name}":`, error);
+            // The `delete` method was called from a Server Component.
+            // This can be ignored if you have middleware refreshing
+            // user sessions.
           }
         },
       },
-    }
+    },
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { createServerClient, SupabaseClient, CookieOptions } from "@supabase/ssr";
+
+// export const createClient = (): SupabaseClient => {
+//   const cookieStore = createServerClient({ cookies: {} });
+
+//   return createServerClient(
+//     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+//     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+//     {
+//       headers: {
+//         cookie: cookieStore.get("cookie-name") || "",
+//       },
+//       autoRefreshToken: true,
+//       persistSession: true,
+//       detectSessionInUrl: false,
+//       localStorage: false,
+//       axios: {
+//         baseURL: process.env.NEXT_PUBLIC_SUPABASE_URL!,
+//         headers: {
+//           "Content-Type": "application/json",
+//           apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+//         },
+//       },
+//     }
+//   );
+// };
